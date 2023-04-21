@@ -51,7 +51,7 @@ confidence_score = prediction[0][index]
 # Pass the result to the nutrition API
 query = class_name[2:].strip()
 api_url = 'https://api.api-ninjas.com/v1/nutrition?query={}'.format(query)
-response = requests.get(api_url, headers={'X-Api-Key': 'rJH5ilDDCLmiao2g41toaw==mykxvTT6Y9BusDo7'})
+response = requests.get(api_url, headers={'X-Api-Key': 'YOUR-KEY-HERE'})
 if response.status_code == requests.codes.ok:
     # Write the classified food item to a text file
     # print(f"Class: {class_name[2:]}")
