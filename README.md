@@ -1,5 +1,6 @@
 
 
+
 # TM-ImageClassifier
 An adaptation of Google's Teachable Machine library to classify a food item and look up nutrition information. 
 
@@ -42,6 +43,8 @@ To prepare this program for use:
 - Install the dependancies with `pip install tensorflow keras pillow requests` (You may need to install tensorflow another way)
 - Paste your ML model files into the cloned directory
 - Paste your image files into the directory
+- Set up your API key
+	- This project utilizes API-Ninja's nutrition API. [You can read more about the API and sign up to get a key here.](https://api-ninjas.com/api/nutrition) Once you have your key, simply find and replace `--YOUR-API-KEY-HERE--` with your API key.
 - Start the web server with `python3 websv.py`
 
 That's it!
@@ -62,6 +65,6 @@ So, if I was going to make a cURL request to process this photo, I'd run `curl -
 (Note-- in this example the server (right side) is being run on a Ubuntu VM running inside my MacBook Pro on Parallels, while the left side is just the terminal from macOS)
 
 ## To-do
-- Merge web server and classification script into one .py file
+- (Done!) Merge web server and classification script into one .py file
 - Make function to upload image directly to classifier
 	- Perferrably this would be done with the same POST request, but otherwise just make it SFTP it or something to the server then run the POST request
