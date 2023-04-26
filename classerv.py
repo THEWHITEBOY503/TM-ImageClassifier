@@ -42,7 +42,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         confidence_score = prediction[0][index]
         query = class_name[2:].strip()
         api_url = 'https://api.api-ninjas.com/v1/nutrition?query={}'.format(query)
-        response = requests.get(api_url, headers={'X-Api-Key': '--YOUR-API-KEY-HERE---'})
+        response = requests.get(api_url, headers={'X-Api-Key': '--YOUR-API-KEY-HERE--'})
         if response.status_code == requests.codes.ok:
             response_data = response.json()[0]
             # Print nutrition information
