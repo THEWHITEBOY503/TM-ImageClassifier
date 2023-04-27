@@ -1,12 +1,17 @@
+
 # Java-and-py Branch
 This branch is under construction. If you can write this program faster than me, please do! (This project is due in like, a week)
 This branch includes the AI image classification server (classifier folder), and the Java app (src/main/java/com/example) that takes a screenshot, SFTP's it over to the classifier server, classifies it, then deletes the file. 
 
-## To-Do
-- ~~actually learn java~~
-- Make it to where the Java app uses a camera or webcam to take a picture instead of using a screenshot.
-- Port to mobile(?)
-- ~~find a better hobby~~
+## To-Do (Java front-end)
+- [ ] ~~actually learn java~~
+- [ ] Make it to where the Java app uses a camera or webcam to take a picture instead of using a screenshot.
+- [ ] Port to mobile(?)
+- [ ] ~~find a better hobby~~
+	- I, personally, think riding motorcycles is a better use of my time than writing horrible code in a language I hate. 
+
+## What is the end goal?
+My end goal with this program is to make a nutrition logging app where you can take a picture of a food item and have it automatically log the food and nutrition information. I was gonna incorperate GPT into it, so you could log your symptoms and have GPT try and find a correlation between them. But, this image classifier part is hard enough, and this project ends in like a week or two, and I graduate in like a month, so I'm not going to bother. 
 
 # TM-ImageClassifier
 An adaptation of Google's Teachable Machine library to classify a food item and look up nutrition information. 
@@ -71,7 +76,8 @@ So, if I was going to make a cURL request to process this photo, I'd run `curl -
 ![ezgif com-optimize-2](https://user-images.githubusercontent.com/28698926/233752410-95c8e571-ed3b-40e9-9f18-b9711a1e23f2.gif)
 (Note-- in this example the server (right side) is being run on a Ubuntu VM running inside my MacBook Pro on Parallels, while the left side is just the terminal from macOS)
 
-## To-do
-- (Done!) Merge web server and classification script into one .py file
-- Make function to upload image directly to classifier
-	- Perferrably this would be done with the same POST request, but otherwise just make it SFTP it or something to the server then run the POST request
+## To-do (Python classifier back-end)
+- [x] (Done!) Merge web server and classification script into one .py file
+- [x] ~~Make function to upload image directly to classifier~~ -- Technically, this task belongs to the Java front-end. Nonetheless, I did it. 
+	- ~~Perferrably this would be done with the same POST request, but otherwise just make it SFTP it or something to the server then run the POST request~~
+	- I ended up just making an SFTP upload for the Java front-end, because I can't for the life of me figure out how to upload an image with POST. My best bet would be to encode the image in base64, send it to the server, and have the server decode the base64. That's what ChatGPT suggested, anyways. 
