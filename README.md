@@ -1,5 +1,12 @@
+# Java-and-py Branch
+This branch is under construction. If you can write this program faster than me, please do! (This project is due in like, a week)
+This branch includes the AI image classification server (classifier folder), and the Java app (src/main/java/com/example) that takes a screenshot, SFTP's it over to the classifier server, classifies it, then deletes the file. 
 
-
+## To-Do
+- ~~actually learn java~~
+- Make it to where the Java app uses a camera or webcam to take a picture instead of using a screenshot.
+- Port to mobile(?)
+- ~~find a better hobby~~
 
 # TM-ImageClassifier
 An adaptation of Google's Teachable Machine library to classify a food item and look up nutrition information. 
