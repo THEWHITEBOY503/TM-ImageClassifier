@@ -1,18 +1,17 @@
-
-
-
 # TM-ImageClassifier
 An adaptation of Google's Teachable Machine library to classify a food item and look up nutrition information. 
 
 This code is an adaptation of the code provided with Google's Teachable Machine library. I'm making this for a school project. Image models are NOT provided in this code repository, you can make your own model for free with [Google's Teachable Machine.](https://teachablemachine.withgoogle.com)
 If you don't want to try and gather images of food, you can download my model [from this link](https://drive.google.com/file/d/1LuuLeYXHS3DG7E_eHF2ScPFoI9PedlXp/view?usp=sharing) (Note that this model file is NOT pre-trained, it's just the training data. To convert it to the h5 file the code needs, see the guide below.)
 
+This branch is now on the back burner, as I need to work on the Java front-end. The Java front-end will be kept in the **Java-and-py** branch, so it will contain more up to date versions of the code.
+
 The version on this branch (websv) has two files, an updated classifier script that only outputs JSON, and an HTML server you can make a POST request to and get a response. Simply keep `websv.py` running and both py files in the same directory, then make a POST request. Here's an example output, with a picture of steak passed:
 ```
 % curl -X POST http://localhost:8080 -d '{"arg1": "IMG_2942.jpeg"}'
 {"name": "Steak", "nutrition_info": {"Calories": "273.4", "Service size": "100.0g", "Saturated Fat": "7.3g", "Total Fat": "18.8g", "Protein": "26.0g", "Sodium": "52mg", "Potassium": "194mg", "Cholesterol": "95mg", "Total Carbohydrates": "0.0g", "Fiber": "0.0g", "Sugar": "0.0g"}}%
 ```
-One thing I would like to see incorporated with this is a script to where a user can take a picture (of food) with their phone, and it will SFTP it (or upload the file to the remote folder one way or another), and then the name of the uploaded file is passed to the POST request, and the results are fed back. 
+~~One thing I would like to see incorporated with this is a script to where a user can take a picture (of food) with their phone, and it will SFTP it (or upload the file to the remote folder one way or another), and then the name of the uploaded file is passed to the POST request, and the results are fed back.~~ This has been accomplished, with the Java version. See branch `Java-and-py`.
 
 
 ## Preparing the model
@@ -65,6 +64,9 @@ So, if I was going to make a cURL request to process this photo, I'd run `curl -
 (Note-- in this example the server (right side) is being run on a Ubuntu VM running inside my MacBook Pro on Parallels, while the left side is just the terminal from macOS)
 
 ## To-do
+
+These only apply to this branch's version of the software.
+
 - (Done!) Merge web server and classification script into one .py file
 - Make function to upload image directly to classifier
 	- Perferrably this would be done with the same POST request, but otherwise just make it SFTP it or something to the server then run the POST request
