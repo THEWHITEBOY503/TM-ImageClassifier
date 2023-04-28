@@ -10,8 +10,6 @@ This branch includes the AI image classification server (classifier folder), and
 - [ ] ~~find a better hobby~~
 	- I, personally, think riding motorcycles is a better use of my time than writing horrible code in a language I hate. 
 
-## What is the end goal?
-My end goal with this program is to make a nutrition logging app where you can take a picture of a food item and have it automatically log the food and nutrition information. I was gonna incorperate GPT into it, so you could log your symptoms and have GPT try and find a correlation between them. But, this image classifier part is hard enough, and this project ends in like a week or two, and I graduate in like a month, so I'm not going to bother. 
 
 # TM-ImageClassifier
 An adaptation of Google's Teachable Machine library to classify a food item and look up nutrition information. 
@@ -26,6 +24,8 @@ The version on this branch (websv) has two files, an updated classifier script t
 ```
 One thing I would like to see incorporated with this is a script to where a user can take a picture (of food) with their phone, and it will SFTP it (or upload the file to the remote folder one way or another), and then the name of the uploaded file is passed to the POST request, and the results are fed back. 
 
+## What is the end goal?
+My end goal with this program is to make a nutrition logging app where you can take a picture of a food item and have it automatically log the food and nutrition information. I was gonna incorperate GPT into it, so you could log your symptoms and have GPT try and find a correlation between them. But, this image classifier part is hard enough, and this project ends in like a week or two, and I graduate in like a month, so I'm not going to bother. 
 
 ## Preparing the model
 ### Getting an image model
