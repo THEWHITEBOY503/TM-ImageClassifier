@@ -1,4 +1,3 @@
-
 # Java-and-py Branch
 This branch is under construction. If you can write this program faster than me, please do! (This project is due in like, a week)
 This branch includes the AI image classification server (classifier folder), and the Java app (src/main/java/com/example) that takes a screenshot, SFTP's it over to the classifier server, classifies it, then deletes the file. 
@@ -7,7 +6,7 @@ This branch includes the AI image classification server (classifier folder), and
 - [ ] ~~actually learn java~~
 - [ ] Make it to where the Java app uses a camera or webcam to take a picture instead of using a screenshot.
 - [ ] Port to mobile(?)
-- [ ] ~~find a better hobby~~
+- [x] ~~find a better hobby~~
 	- I, personally, think riding motorcycles is a better use of my time than writing horrible code in a language I hate. 
 
 
@@ -30,7 +29,7 @@ My end goal with this program is to make a nutrition logging app where you can t
 ## Preparing the model
 ### Getting an image model
 To get an image model, go to [Google's Teachable Machine.](https://teachablemachine.withgoogle.com) 
-If you want to build your own training database, go right ahead! Simply create a new image classifier, and train your model how you want it, then skip to downloading your model.
+If you want to build your own training database, go right ahead! Simply create a new image classifier, and train your model how you want it, then skip to [Exporting your model](https://github.com/THEWHITEBOY503/TM-ImageClassifier/blob/Java-and-py/README.md#exporting-your-model).
 If you would rather use my example model, first download the `Food training.tm` library from [either this link or the one above (they're the same).](https://drive.google.com/file/d/1LuuLeYXHS3DG7E_eHF2ScPFoI9PedlXp/view?usp=sharing) Then, select "Open an existing project from file".
 
 <img width="1440" alt="Screenshot 2023-04-21 at 12 29 07" src="https://user-images.githubusercontent.com/28698926/233710628-9f619beb-4eb2-484a-aff2-ab9662468313.png">
