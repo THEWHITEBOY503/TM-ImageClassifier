@@ -3,11 +3,10 @@ This branch is under construction. If you can write this program faster than me,
 This branch includes the AI image classification server (classifier folder), and the Java app (src/main/java/com/example) that takes a screenshot, SFTP's it over to the classifier server, classifies it, then deletes the file. 
 
 ## To-Do (Java front-end)
-- [ ] ~~actually learn java~~
 - [ ] Make it to where the Java app uses a camera or webcam to take a picture instead of using a screenshot.
 - [ ] Port to mobile(?)
 - [x] ~~find a better hobby~~
-	- I, personally, think riding motorcycles is a better use of my time than writing horrible code in a language I hate. 
+	- I, personally, think riding motorcycles is a better use of my time than writing code in a language I hate. 
 
 
 # TM-ImageClassifier
