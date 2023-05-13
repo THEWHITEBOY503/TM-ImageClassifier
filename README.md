@@ -62,11 +62,3 @@ So, if I was going to make a cURL request to process this photo, I'd run `curl -
 
 ![ezgif com-optimize-2](https://user-images.githubusercontent.com/28698926/233752410-95c8e571-ed3b-40e9-9f18-b9711a1e23f2.gif)
 (Note-- in this example the server (right side) is being run on a Ubuntu VM running inside my MacBook Pro on Parallels, while the left side is just the terminal from macOS)
-
-## To-do
-
-These only apply to this branch's version of the software.
-
-- (Done!) Merge web server and classification script into one .py file
-- Make function to upload image directly to classifier
-	- Perferrably this would be done with the same POST request, but otherwise just make it SFTP it or something to the server then run the POST request
