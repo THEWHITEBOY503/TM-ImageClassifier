@@ -1,4 +1,4 @@
-# TM-ImageClassifier
+# TM-FoodClassifier
 An adaptation of Google's Teachable Machine library to classify a food item and look up nutrition information. 
 
 This code is an adaptation of the code provided with Google's Teachable Machine library. I'm making this for a school project. Image models are NOT provided in this code repository, you can make your own model for free with [Google's Teachable Machine.](https://teachablemachine.withgoogle.com)
