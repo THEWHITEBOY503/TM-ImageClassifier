@@ -1,8 +1,8 @@
 # TM-FoodClassifier
 An adaptation of Google's Teachable Machine library to classify a food item and look up nutrition information. 
 
-This code is an adaptation of the code provided with Google's Teachable Machine library. I'm making this for a school project. Image models are NOT provided in this code repository, you can make your own model for free with [Google's Teachable Machine.](https://teachablemachine.withgoogle.com)
-If you don't want to try and gather images of food, you can download my model [from this link](https://drive.google.com/file/d/1LuuLeYXHS3DG7E_eHF2ScPFoI9PedlXp/view?usp=sharing) (Note that this model file is NOT pre-trained, it's just the training data. To convert it to the h5 file the code needs, see the guide below.)
+This code is an adaptation of the code provided with Google's Teachable Machine library. I'm making this for a school project. While Image models are not provided in this code repository, you can make your own model easily & for free with [Google's Teachable Machine,](https://teachablemachine.withgoogle.com)
+or, if you don't want to try and gather images of food, you can download my model [from this link](https://drive.google.com/file/d/1LuuLeYXHS3DG7E_eHF2ScPFoI9PedlXp/view?usp=sharing) (Note that this model file is NOT pre-trained, it's just the training data. To convert it to the h5 file the code needs, see the guide below.)
 
 This branch is now on the back burner, as I need to work on the Java front-end. The Java front-end will be kept in the **Java-and-py** branch, so it will contain more up to date versions of the code.
 
